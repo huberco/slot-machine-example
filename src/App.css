@@ -1,0 +1,161 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fafafa;
+}
+
+.subtitle {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.95rem;
+}
+
+.layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.config {
+  flex: 0 0 240px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.config h2 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f4f4f5;
+}
+
+.config-group {
+  margin-bottom: 1.25rem;
+}
+
+.config-group:last-child {
+  margin-bottom: 0;
+}
+
+.config-group label {
+  display: block;
+  font-size: 0.8rem;
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.button-group button {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #e4e4e7;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.button-group button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.button-group button.active {
+  background: rgba(99, 102, 241, 0.4);
+  border-color: rgba(99, 102, 241, 0.8);
+  color: #fff;
+}
+
+.demo {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+
+.slot-wrapper {
+  width: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.slot-machine {
+  --slot-overlay-from: rgba(0, 0, 0, 0.5);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.spin-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+}
+
+.spin-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+
+.spin-btn:active {
+  transform: translateY(0);
+}
+
+.result {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+}
+
+.result strong {
+  color: #fafafa;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .config {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
